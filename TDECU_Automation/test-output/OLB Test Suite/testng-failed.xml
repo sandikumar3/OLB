@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [OLB Test Suite]">
+  <test thread-count="5" name="VerifyOnetimeMyTdecuAccountTransfer Test Cases(failed)">
+    <classes>
+      <class name="com.TestCases.VerifyOnetimeMyTdecuAccountTransfer">
+        <methods>
+          <include name="verifyOneTimeTransfer"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.TestCases.VerifyOnetimeMyTdecuAccountTransfer -->
+    </classes>
+  </test> <!-- VerifyOnetimeMyTdecuAccountTransfer Test Cases(failed) -->
+  <test thread-count="5" name="VerifyDailyMyTdecuAccountTransfer Test Cases(failed)">
+    <classes>
+      <class name="com.TestCases.VerifyDailyMyTdecuAccountTransfer">
+        <methods>
+          <include name="verifyDailyTransfer"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.TestCases.VerifyDailyMyTdecuAccountTransfer -->
+    </classes>
+  </test> <!-- VerifyDailyMyTdecuAccountTransfer Test Cases(failed) -->
+  <test thread-count="5" name="VerifyWeeklyMyTdecuAccountTransfer Test Cases(failed)">
+    <classes>
+      <class name="com.TestCases.VerifyWeeklyMyTdecuAccountTransfer">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyWeeklyTransfer"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.TestCases.VerifyWeeklyMyTdecuAccountTransfer -->
+    </classes>
+  </test> <!-- VerifyWeeklyMyTdecuAccountTransfer Test Cases(failed) -->
+  <test thread-count="5" name="VerifyMonthlyMyTdecuAccountTransfer Test Cases(failed)">
+    <classes>
+      <class name="com.TestCases.VerifyMonthlyMyTdecuAccountTransfer">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyMonthlyTransfer"/>
+        </methods>
+      </class> <!-- com.TestCases.VerifyMonthlyMyTdecuAccountTransfer -->
+    </classes>
+  </test> <!-- VerifyMonthlyMyTdecuAccountTransfer Test Cases(failed) -->
+</suite> <!-- Failed suite [OLB Test Suite] -->
