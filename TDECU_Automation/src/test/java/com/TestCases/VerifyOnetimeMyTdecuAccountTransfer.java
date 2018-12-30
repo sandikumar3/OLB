@@ -24,6 +24,7 @@ public class VerifyOnetimeMyTdecuAccountTransfer extends GenericKeywords {
 	@BeforeTest
 	public void setUp(){
 		extent=ExtentManager.GetExtent();
+		test=extent.createTest(this.getClass().getSimpleName());
 		executeDriverScript();
 		test.log(Status.INFO, "Application url navigated" );
 		getElement(ObjectRepository.username_txt).sendKeys("user8141758");
@@ -37,7 +38,7 @@ public class VerifyOnetimeMyTdecuAccountTransfer extends GenericKeywords {
 	
 	@Test
 	public void verifyOneTimeTransfer() throws InterruptedException{
-		test=extent.createTest(this.getClass().getSimpleName());
+		
 		getElement(ObjectRepository.transferPay).click();
 		test.log(Status.INFO, "Transfer tab clicked" );
 		getElement(ObjectRepository.transferMoney).click();
@@ -87,6 +88,7 @@ public class VerifyOnetimeMyTdecuAccountTransfer extends GenericKeywords {
 	@AfterTest
 	public void tearDown()
 	{
+		extent.flush();
 		driver.quit();
 	}
 	

@@ -13,6 +13,7 @@ public class ObjectRepository {
 	public static String transferMoney="//div[@id='frmAccountsLanding_postLoginHdr_flxTransferMoney']";
 	public static String transferscreentitle="//div[contains(text(),'Select a Transfer Type')]";
 	public static String continuebtn_MyTDECU="//input[@id='frmTransfers_transfermain_btnToMyKonyBankProceed']";
+	public static String continuebtn_OtherTDECU="//input[@id='frmTransfers_transfermain_btnToOtherKonyBankProceed']";
 	public static String configuretransfertitle="//div[@id='frmTransfers_transfermain_maketransfer_lblTransferFrom']";
 	
 	public static String fromacntdroparw="//span[@id='frmTransfers_transfermain_maketransfer_imgDropdown_span']";
@@ -29,6 +30,8 @@ public class ObjectRepository {
 	public static String confirm_header="//div[@id='frmConfirm_confirmDialog_confirmHeaders_lblHeading']";
 	public static String confirm_btn="//input[@id='frmConfirm_confirmDialog_confirmButtons_btnConfirm']";
 	public static String success_msg="//input[@id='frmConfirm_confirmDialog_confirmButtons_btnConfirm']";
+	
+	public static String noaccountmsg="//div[@id='frmTransfers_NoAccounts_txtMessage']";
 	
 	
 	

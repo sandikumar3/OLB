@@ -5,6 +5,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.FrameworkComponents.ExtentManager;
 import com.FrameworkComponents.GenericKeywords;
 import com.FrameworkComponents.ObjectRepository;
 import com.aventstack.extentreports.ExtentReports;
@@ -18,6 +19,8 @@ public class VerifyMonthlyMyTdecuAccountTransfer extends GenericKeywords {
 	
 	@BeforeTest
 	public void setUp(){
+		extent=ExtentManager.GetExtent();
+		test=extent.createTest(this.getClass().getSimpleName());
 		executeDriverScript();
 		test.log(Status.INFO, "Application url navigated" );
 		getElement(ObjectRepository.username_txt).sendKeys("user8141758");
@@ -30,7 +33,7 @@ public class VerifyMonthlyMyTdecuAccountTransfer extends GenericKeywords {
 	
 	@Test
 	public void verifyMonthlyTransfer()throws InterruptedException{
-		test=extent.createTest(this.getClass().getSimpleName());
+		
 		getElement(ObjectRepository.transferPay).click();
 		test.log(Status.INFO, "Transfer tab clicked" );
 		getElement(ObjectRepository.transferMoney).click();
@@ -86,6 +89,7 @@ public class VerifyMonthlyMyTdecuAccountTransfer extends GenericKeywords {
 	@AfterTest
 	public void tearDown()
 	{
+		extent.flush();
 		driver.quit();
 	}
 }
