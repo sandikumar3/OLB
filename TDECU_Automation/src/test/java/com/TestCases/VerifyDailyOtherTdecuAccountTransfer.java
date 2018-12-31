@@ -12,17 +12,16 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-public class VerifyOnetimeOtherTdecuAccountTransfer extends GenericKeywords {
-	
+public class VerifyDailyOtherTdecuAccountTransfer extends GenericKeywords {
+
 	ExtentReports extent;
 	ExtentTest test;
-
-
+	
 	@BeforeTest
 	public void setUp(){
 		extent=ExtentManager.GetExtent();
-		test=extent.createTest(this.getClass().getSimpleName());
 		executeDriverScript();
+		test=extent.createTest(this.getClass().getSimpleName());
 		test.log(Status.INFO, "Application url navigated" );
 		getElement(ObjectRepository.username_txt).sendKeys("user8141758");
 		getElement(ObjectRepository.password_txt).sendKeys("Kony@123");
@@ -32,9 +31,8 @@ public class VerifyOnetimeOtherTdecuAccountTransfer extends GenericKeywords {
 		test.log(Status.INFO, "User logged in successfully" );
 	}
 	
-	
 	@Test
-	public void verifyOneTimeOtherTdecuAccountTransfer() throws InterruptedException{
+	public void verifyDailyOtherTdecuAccountTransfer()throws InterruptedException{
 		
 		getElement(ObjectRepository.transferPay).click();
 		test.log(Status.INFO, "Transfer tab clicked" );
@@ -61,14 +59,19 @@ public class VerifyOnetimeOtherTdecuAccountTransfer extends GenericKeywords {
 		getElement(ObjectRepository.amount_txt).sendKeys("1.12");
 		test.log(Status.INFO, "Amount entered greater than minimum amount" );
 		
-		verifyDropdownSelection(ObjectRepository.frequencydrop,"Once");
-		test.log(Status.INFO, "Frequency selected as Once" );
+		selectDropdownOpt(ObjectRepository.frequencydrop,"Daily");
+		verifyDropdownSelection(ObjectRepository.frequencydrop,"Daily");
+		test.log(Status.INFO, "Frequency selected as Daily and verified" );
+		
+		verifyDropdownSelection(ObjectRepository.howlongdrop,"On a Specific Date");
+		verifyElementPresent(ObjectRepository.sendOnCal);
+		verifyElementPresent(ObjectRepository.endOnCal);
 		
 		getElement(ObjectRepository.notes_txt).sendKeys("2612 Notes");
 		test.log(Status.INFO, "Notes entered" );
 		
 		getElement(ObjectRepository.maketransfer_btn).click();
-		test.log(Status.INFO, "Make transfer button clicked" );
+		test.log(Status.INFO, "Make Transfer button clicked" );
 		
 		verifyElementPresent(ObjectRepository.confirm_header);
 		getElement(ObjectRepository.confirm_btn).click();
@@ -77,9 +80,7 @@ public class VerifyOnetimeOtherTdecuAccountTransfer extends GenericKeywords {
 		verifyElementPresent(ObjectRepository.success_msg);
 		test.log(Status.INFO, "Success Transfer screen verified");
 		
-		test.log(Status.PASS, "Onetime Other TDECU account transfer scenario working fine");
-		
-		
+		test.log(Status.PASS, "Daily Other TDECU account transfer scenario working fine");
 	}
 	
 	@AfterTest
@@ -88,6 +89,4 @@ public class VerifyOnetimeOtherTdecuAccountTransfer extends GenericKeywords {
 		extent.flush();
 		driver.quit();
 	}
-	
-	
 }

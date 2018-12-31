@@ -34,10 +34,24 @@
        <class name="com.TestCases.VerifyMonthlyMyTdecuAccountTransfer"/> 
         </classes>
 </test>
+
 <test name="VerifyNoAccountsMessageOtherTdecuAccount Test Cases" >
   <classes>
        
        <class name="com.TestCases.VerifyNoAccountsMessage"/> 
         </classes>
 </test>
+<test name="VerifyOneTimeOtherTdecuAccountTransfer Test Cases" >
+  <classes>
+       
+       <class name="com.TestCases.VerifyOnetimeOtherTdecuAccountTransfer"/> 
+        </classes>
+</test>
+<test name="VerifyDailyOtherTdecuAccountTransfer Test Cases" >
+  <classes>
+       
+       <class name="com.TestCases.VerifyDailyOtherTdecuAccountTransfer"/> 
+        </classes>
+</test>
+
 </suite>

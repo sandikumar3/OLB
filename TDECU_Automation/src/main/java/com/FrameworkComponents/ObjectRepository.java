@@ -32,6 +32,8 @@ public class ObjectRepository {
 	public static String success_msg="//input[@id='frmConfirm_confirmDialog_confirmButtons_btnConfirm']";
 	
 	public static String noaccountmsg="//div[@id='frmTransfers_NoAccounts_txtMessage']";
+	public static String scheduledtab="//input[@id='frmTransfers_transfermain_btnScheduled']";
+	public static String postedtab="//input[@id='frmTransfers_transfermain_btnRecent']";
 	
 	
 	
