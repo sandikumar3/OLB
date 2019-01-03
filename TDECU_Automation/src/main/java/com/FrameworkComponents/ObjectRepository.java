@@ -34,6 +34,25 @@ public class ObjectRepository {
 	public static String noaccountmsg="//div[@id='frmTransfers_NoAccounts_txtMessage']";
 	public static String scheduledtab="//input[@id='frmTransfers_transfermain_btnScheduled']";
 	public static String postedtab="//input[@id='frmTransfers_transfermain_btnRecent']";
+//edoc 	
+	public static String edoctab="//div[@id='frmAccountsLanding_postLoginHdr_lblEdoc']";
+	public static String enableedocmsg="//div[@id='frmEDocuments_lblEnableEDocs']";
+	public static String enablebtn="//input[@id='frmEDocuments_btnEnable']";
+	public static String cancelbtn="//input[@id='frmEDocuments_btnCancel']";
+	public static String settingsimg="//div[@id='frmAccountsLanding_postLoginHdr_flxUserId']";
+	public static String accntsettinglnk="//div[@id='flxAccountTypes_lblUsers' and text()='Account Settings']";
+	public static String edoclnk="//div[@id='frmProfileManagement_settings_lblEDocuments']";
+	public static String edocpagettl="//div[@id='frmEDocuments_lblHeading']";
+	public static String edocTnc="//img[@id='frmEDocuments_imgCheck']";
+	public static String savebtn="//input[@title='Save']";
+	public static String enablesuccess="//div[@id='frmEDocuments_lblConfirmation']";
+	public static String viewdocbtn="//input[@id='frmEDocuments_btnEdocView']";
+	public static String enableedocchk="//img[@id='frmProfileManagement_settings_imgEnableEDocs']";
+	public static String disablepopupttl="//div[text()='Disable e-Documents']";
+	public static String yesbtn="//input[@id='frmProfileManagement_btnYes']";
+	public static String nobtn="//input[@title='No']";
+	public static String disableack="//div[@id='frmProfileManagement_lblConfirmation']";
+	
 	
 	
 	

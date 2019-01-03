@@ -1,6 +1,7 @@
 package com.FrameworkComponents;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -41,7 +42,12 @@ public class GenericKeywords extends BaseClass{
 		Assert.assertTrue(defaultItem.equalsIgnoreCase(option));
 	}
 	
-	
+	public static void scrollToElement(String locator){
+		WebElement element=getElement(locator);
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
+		js.executeScript("arguments[0].scrollIntoView(true);",element);
+		
+	}
 	
 
 }

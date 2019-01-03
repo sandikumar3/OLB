@@ -16,7 +16,7 @@ public class BaseClass {
 		if(browser.equalsIgnoreCase("Chrome")){
 			System.setProperty("webdriver.chrome.driver","C:\\Selenium Configuration Tools\\chromedriver_win32\\chromedriver.exe");
 			driver=new ChromeDriver();
-		}else if(browser.equalsIgnoreCase("ÏE")){
+		}else if(browser.equalsIgnoreCase("IE")){
 			System.setProperty("webdriver.ie.driver","");
 			driver=new InternetExplorerDriver();
 		}else if(browser.equalsIgnoreCase("Firefox")){
@@ -25,7 +25,7 @@ public class BaseClass {
 		}
 		driver.get("https://tdecusit.konycloud.com/apps/TDECUOLB/#_frmLogin");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 	
 }

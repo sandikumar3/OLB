@@ -1,177 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="8" passed="7">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="OLB Test Suite" duration-ms="246020" started-at="2018-12-31T15:15:53Z" finished-at="2018-12-31T15:19:59Z">
+  <suite name="Default suite" duration-ms="51738" started-at="2019-01-03T03:19:12Z" finished-at="2019-01-03T03:20:04Z">
     <groups>
     </groups>
-    <test name="VerifyMinimumAmountTransfer Test Cases" duration-ms="35069" started-at="2018-12-31T15:15:53Z" finished-at="2018-12-31T15:16:28Z">
-      <class name="com.TestCases.VerifyMinimumAmountTransfer">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.TestCases.VerifyMinimumAmountTransfer@4ed9f0]" name="setUp" is-config="true" duration-ms="15171" started-at="2018-12-31T15:15:53Z" finished-at="2018-12-31T15:16:08Z">
+    <test name="Default test" duration-ms="51738" started-at="2019-01-03T03:19:12Z" finished-at="2019-01-03T03:20:04Z">
+      <class name="com.TestCases.VerifyEnablingEDocuments">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.TestCases.VerifyEnablingEDocuments@4ed9f0]" name="setUp" is-config="true" duration-ms="19907" started-at="2019-01-03T03:19:12Z" finished-at="2019-01-03T03:19:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyMinimumTransfer()[pri:0, instance:com.TestCases.VerifyMinimumAmountTransfer@4ed9f0]" name="verifyMinimumTransfer" duration-ms="18567" started-at="2018-12-31T15:16:08Z" finished-at="2018-12-31T15:16:26Z">
+        <test-method status="PASS" signature="verifyEnablingEDocuments()[pri:0, instance:com.TestCases.VerifyEnablingEDocuments@4ed9f0]" name="verifyEnablingEDocuments" duration-ms="30185" started-at="2019-01-03T03:19:32Z" finished-at="2019-01-03T03:20:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyMinimumTransfer -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TestCases.VerifyMinimumAmountTransfer@4ed9f0]" name="tearDown" is-config="true" duration-ms="1305" started-at="2018-12-31T15:16:26Z" finished-at="2018-12-31T15:16:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.TestCases.VerifyMinimumAmountTransfer -->
-    </test> <!-- VerifyMinimumAmountTransfer Test Cases -->
-    <test name="VerifyOnetimeMyTdecuAccountTransfer Test Cases" duration-ms="32911" started-at="2018-12-31T15:16:28Z" finished-at="2018-12-31T15:17:01Z">
-      <class name="com.TestCases.VerifyOnetimeMyTdecuAccountTransfer">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.TestCases.VerifyOnetimeMyTdecuAccountTransfer@100df86]" name="setUp" is-config="true" duration-ms="13091" started-at="2018-12-31T15:16:28Z" finished-at="2018-12-31T15:16:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyOneTimeTransfer()[pri:0, instance:com.TestCases.VerifyOnetimeMyTdecuAccountTransfer@100df86]" name="verifyOneTimeTransfer" duration-ms="18846" started-at="2018-12-31T15:16:41Z" finished-at="2018-12-31T15:17:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyOneTimeTransfer -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TestCases.VerifyOnetimeMyTdecuAccountTransfer@100df86]" name="tearDown" is-config="true" duration-ms="971" started-at="2018-12-31T15:17:00Z" finished-at="2018-12-31T15:17:01Z">
+        </test-method> <!-- verifyEnablingEDocuments -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TestCases.VerifyEnablingEDocuments@4ed9f0]" name="tearDown" is-config="true" duration-ms="1600" started-at="2019-01-03T03:20:02Z" finished-at="2019-01-03T03:20:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.TestCases.VerifyOnetimeMyTdecuAccountTransfer -->
-    </test> <!-- VerifyOnetimeMyTdecuAccountTransfer Test Cases -->
-    <test name="VerifyDailyMyTdecuAccountTransfer Test Cases" duration-ms="33734" started-at="2018-12-31T15:17:01Z" finished-at="2018-12-31T15:17:34Z">
-      <class name="com.TestCases.VerifyDailyMyTdecuAccountTransfer">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.TestCases.VerifyDailyMyTdecuAccountTransfer@e92674]" name="setUp" is-config="true" duration-ms="13978" started-at="2018-12-31T15:17:01Z" finished-at="2018-12-31T15:17:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyDailyTransfer()[pri:0, instance:com.TestCases.VerifyDailyMyTdecuAccountTransfer@e92674]" name="verifyDailyTransfer" duration-ms="18768" started-at="2018-12-31T15:17:15Z" finished-at="2018-12-31T15:17:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDailyTransfer -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TestCases.VerifyDailyMyTdecuAccountTransfer@e92674]" name="tearDown" is-config="true" duration-ms="983" started-at="2018-12-31T15:17:33Z" finished-at="2018-12-31T15:17:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.TestCases.VerifyDailyMyTdecuAccountTransfer -->
-    </test> <!-- VerifyDailyMyTdecuAccountTransfer Test Cases -->
-    <test name="VerifyWeeklyMyTdecuAccountTransfer Test Cases" duration-ms="34286" started-at="2018-12-31T15:17:34Z" finished-at="2018-12-31T15:18:09Z">
-      <class name="com.TestCases.VerifyWeeklyMyTdecuAccountTransfer">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.TestCases.VerifyWeeklyMyTdecuAccountTransfer@397ed7]" name="setUp" is-config="true" duration-ms="13468" started-at="2018-12-31T15:17:34Z" finished-at="2018-12-31T15:17:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyWeeklyTransfer()[pri:0, instance:com.TestCases.VerifyWeeklyMyTdecuAccountTransfer@397ed7]" name="verifyWeeklyTransfer" duration-ms="19827" started-at="2018-12-31T15:17:48Z" finished-at="2018-12-31T15:18:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyWeeklyTransfer -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TestCases.VerifyWeeklyMyTdecuAccountTransfer@397ed7]" name="tearDown" is-config="true" duration-ms="988" started-at="2018-12-31T15:18:08Z" finished-at="2018-12-31T15:18:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.TestCases.VerifyWeeklyMyTdecuAccountTransfer -->
-    </test> <!-- VerifyWeeklyMyTdecuAccountTransfer Test Cases -->
-    <test name="VerifyMonthlyMyTdecuAccountTransfer Test Cases" duration-ms="26846" started-at="2018-12-31T15:18:09Z" finished-at="2018-12-31T15:18:35Z">
-      <class name="com.TestCases.VerifyMonthlyMyTdecuAccountTransfer">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.TestCases.VerifyMonthlyMyTdecuAccountTransfer@b9f472]" name="setUp" is-config="true" duration-ms="12982" started-at="2018-12-31T15:18:09Z" finished-at="2018-12-31T15:18:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="verifyMonthlyTransfer()[pri:0, instance:com.TestCases.VerifyMonthlyMyTdecuAccountTransfer@b9f472]" name="verifyMonthlyTransfer" duration-ms="12870" started-at="2018-12-31T15:18:22Z" finished-at="2018-12-31T15:18:35Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at com.FrameworkComponents.GenericKeywords.verifyDropdownSelection(GenericKeywords.java:41)
-at com.TestCases.VerifyMonthlyMyTdecuAccountTransfer.verifyMonthlyTransfer(VerifyMonthlyMyTdecuAccountTransfer.java:66)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyMonthlyTransfer -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TestCases.VerifyMonthlyMyTdecuAccountTransfer@b9f472]" name="tearDown" is-config="true" duration-ms="991" started-at="2018-12-31T15:18:35Z" finished-at="2018-12-31T15:18:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.TestCases.VerifyMonthlyMyTdecuAccountTransfer -->
-    </test> <!-- VerifyMonthlyMyTdecuAccountTransfer Test Cases -->
-    <test name="VerifyNoAccountsMessageOtherTdecuAccount Test Cases" duration-ms="21537" started-at="2018-12-31T15:18:36Z" finished-at="2018-12-31T15:18:57Z">
-      <class name="com.TestCases.VerifyNoAccountsMessage">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.TestCases.VerifyNoAccountsMessage@102b3b1]" name="setUp" is-config="true" duration-ms="11670" started-at="2018-12-31T15:18:36Z" finished-at="2018-12-31T15:18:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyNoAccountsMessageOtherTdecuAccount()[pri:0, instance:com.TestCases.VerifyNoAccountsMessage@102b3b1]" name="verifyNoAccountsMessageOtherTdecuAccount" duration-ms="8885" started-at="2018-12-31T15:18:47Z" finished-at="2018-12-31T15:18:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNoAccountsMessageOtherTdecuAccount -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TestCases.VerifyNoAccountsMessage@102b3b1]" name="tearDown" is-config="true" duration-ms="980" started-at="2018-12-31T15:18:56Z" finished-at="2018-12-31T15:18:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.TestCases.VerifyNoAccountsMessage -->
-    </test> <!-- VerifyNoAccountsMessageOtherTdecuAccount Test Cases -->
-    <test name="VerifyOneTimeOtherTdecuAccountTransfer Test Cases" duration-ms="30089" started-at="2018-12-31T15:18:57Z" finished-at="2018-12-31T15:19:27Z">
-      <class name="com.TestCases.VerifyOnetimeOtherTdecuAccountTransfer">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.TestCases.VerifyOnetimeOtherTdecuAccountTransfer@adede5]" name="setUp" is-config="true" duration-ms="12641" started-at="2018-12-31T15:18:57Z" finished-at="2018-12-31T15:19:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyOneTimeOtherTdecuAccountTransfer()[pri:0, instance:com.TestCases.VerifyOnetimeOtherTdecuAccountTransfer@adede5]" name="verifyOneTimeOtherTdecuAccountTransfer" duration-ms="16324" started-at="2018-12-31T15:19:10Z" finished-at="2018-12-31T15:19:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyOneTimeOtherTdecuAccountTransfer -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TestCases.VerifyOnetimeOtherTdecuAccountTransfer@adede5]" name="tearDown" is-config="true" duration-ms="1123" started-at="2018-12-31T15:19:26Z" finished-at="2018-12-31T15:19:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.TestCases.VerifyOnetimeOtherTdecuAccountTransfer -->
-    </test> <!-- VerifyOneTimeOtherTdecuAccountTransfer Test Cases -->
-    <test name="VerifyDailyOtherTdecuAccountTransfer Test Cases" duration-ms="31320" started-at="2018-12-31T15:19:27Z" finished-at="2018-12-31T15:19:59Z">
-      <class name="com.TestCases.VerifyDailyOtherTdecuAccountTransfer">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.TestCases.VerifyDailyOtherTdecuAccountTransfer@bdf5e5]" name="setUp" is-config="true" duration-ms="12379" started-at="2018-12-31T15:19:27Z" finished-at="2018-12-31T15:19:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyDailyOtherTdecuAccountTransfer()[pri:0, instance:com.TestCases.VerifyDailyOtherTdecuAccountTransfer@bdf5e5]" name="verifyDailyOtherTdecuAccountTransfer" duration-ms="17958" started-at="2018-12-31T15:19:40Z" finished-at="2018-12-31T15:19:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDailyOtherTdecuAccountTransfer -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TestCases.VerifyDailyOtherTdecuAccountTransfer@bdf5e5]" name="tearDown" is-config="true" duration-ms="982" started-at="2018-12-31T15:19:58Z" finished-at="2018-12-31T15:19:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.TestCases.VerifyDailyOtherTdecuAccountTransfer -->
-    </test> <!-- VerifyDailyOtherTdecuAccountTransfer Test Cases -->
-  </suite> <!-- OLB Test Suite -->
+      </class> <!-- com.TestCases.VerifyEnablingEDocuments -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -53,5 +53,19 @@
        <class name="com.TestCases.VerifyDailyOtherTdecuAccountTransfer"/> 
         </classes>
 </test>
+<test name="VerifyEnablingEDocuments Test Cases" >
+  <classes>
+       
+       <class name="com.TestCases.VerifyEnablingEDocuments"/> 
+        </classes>
+</test>
+<test name="VerifyDisablingEDocuments Test Cases" >
+  <classes>
+       
+       <class name="com.TestCases.VerifyDisablingEDocuments"/> 
+        </classes>
+</test>
+
+
 
 </suite>
