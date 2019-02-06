@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [OLB My TDECU Transfer Test Suite]">
+  <test thread-count="5" name="VerifyWeeklyMyTdecuAccountTransfer Test Cases(failed)">
     <classes>
-      <class name="com.TestCases.VerifyDisablingEDocuments">
+      <class name="com.TestCases.VerifyWeeklyMyTdecuAccountTransfer">
         <methods>
-          <include name="verifyDisablingEDocuments"/>
+          <include name="tearDown"/>
+          <include name="verifyWeeklyTransfer"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.TestCases.VerifyWeeklyMyTdecuAccountTransfer -->
+    </classes>
+  </test> <!-- VerifyWeeklyMyTdecuAccountTransfer Test Cases(failed) -->
+  <test thread-count="5" name="VerifyMonthlyMyTdecuAccountTransfer Test Cases(failed)">
+    <classes>
+      <class name="com.TestCases.VerifyMonthlyMyTdecuAccountTransfer">
+        <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="verifyMonthlyTransfer"/>
         </methods>
-      </class> <!-- com.TestCases.VerifyDisablingEDocuments -->
+      </class> <!-- com.TestCases.VerifyMonthlyMyTdecuAccountTransfer -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- VerifyMonthlyMyTdecuAccountTransfer Test Cases(failed) -->
+</suite> <!-- Failed suite [OLB My TDECU Transfer Test Suite] -->

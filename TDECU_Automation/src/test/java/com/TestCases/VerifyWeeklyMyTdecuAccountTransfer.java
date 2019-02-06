@@ -1,6 +1,10 @@
 package com.TestCases;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -23,8 +27,8 @@ public class VerifyWeeklyMyTdecuAccountTransfer extends GenericKeywords {
 		test=extent.createTest(this.getClass().getSimpleName());
 		executeDriverScript();
 		test.log(Status.INFO, "Application url navigated" );
-		getElement(ObjectRepository.username_txt).sendKeys("user8141758");
-		getElement(ObjectRepository.password_txt).sendKeys("Kony@123");
+		getElement(ObjectRepository.username_txt).sendKeys("user50225500");
+		getElement(ObjectRepository.password_txt).sendKeys("Kony@432");
 		test.log(Status.INFO, "Username and Password entered" );
 		getElement(ObjectRepository.login_btn).click();
 		Assert.assertTrue(getElement(ObjectRepository.logout_lnk).isDisplayed());
@@ -47,11 +51,16 @@ public class VerifyWeeklyMyTdecuAccountTransfer extends GenericKeywords {
 		
 		verifyElementPresent(ObjectRepository.fromacntdroparw);
 		getElement(ObjectRepository.fromacntdroparw).click();
-		getElement("//div[contains(text(),'40073')]").click();
+		getElement("//div[contains(text(),'57610')]").click();
 		test.log(Status.INFO, "From Account selected" );
 		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,500)");
+		Thread.sleep(5000);
 		getElement(ObjectRepository.toacntdroparw).click();
-		getElement("//div[contains(text(),'52821')]").click();
+		Thread.sleep(4000);
+		
+		driver.findElement(By.xpath("//div[@kcontainerid='segRecipientName' and contains(text(),'37954')]")).click();
 		test.log(Status.INFO, "To Account selected" );
 		
 		getElement(ObjectRepository.amount_txt).clear();
@@ -87,7 +96,15 @@ public class VerifyWeeklyMyTdecuAccountTransfer extends GenericKeywords {
 		verifyElementPresent(ObjectRepository.success_msg);
 		test.log(Status.INFO, "Success Transfer screen verified");
 		
-		test.log(Status.PASS, "Weekly TDECU account transfer scenario working fine");
+	}
+	@AfterMethod
+	public void afterMethod(ITestResult result) throws Throwable{
+		if(result.getStatus()==ITestResult.FAILURE){
+			test.log(Status.FAIL, "Test Failed"+result.getThrowable());		
+		}else
+		{
+			test.log(Status.PASS, "Weekly TDECU account transfer scenario working fine");
+		}
 	}
 	
 	@AfterTest

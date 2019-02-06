@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestCases.VerifyDisablingEDocuments">
+      <class name="com.TestCases.VerifyDailyMyTdecuAccountTransfer">
         <methods>
-          <include name="verifyDisablingEDocuments"/>
-          <include name="tearDown"/>
+          <include name="verifyDailyTransfer"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.TestCases.VerifyDisablingEDocuments -->
+      </class> <!-- com.TestCases.VerifyDailyMyTdecuAccountTransfer -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
