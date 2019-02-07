@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestCases.VerifyDailyMyTdecuAccountTransfer">
+      <class name="com.TestCases.TDB2020_VerifyDailyMyTdecuAccountTransfer">
         <methods>
           <include name="verifyDailyTransfer"/>
-          <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.TestCases.VerifyDailyMyTdecuAccountTransfer -->
+      </class> <!-- com.TestCases.TDB2020_VerifyDailyMyTdecuAccountTransfer -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

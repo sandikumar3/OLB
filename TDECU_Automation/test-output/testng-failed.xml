@@ -1,28 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [OLB My TDECU Transfer Test Suite]">
-  <test thread-count="5" name="VerifyWeeklyMyTdecuAccountTransfer Test Cases(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestCases.VerifyWeeklyMyTdecuAccountTransfer">
+      <class name="com.TestCases.TDB2020_VerifyDailyMyTdecuAccountTransfer">
         <methods>
-          <include name="tearDown"/>
-          <include name="verifyWeeklyTransfer"/>
-          <include name="setUp"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- com.TestCases.VerifyWeeklyMyTdecuAccountTransfer -->
-    </classes>
-  </test> <!-- VerifyWeeklyMyTdecuAccountTransfer Test Cases(failed) -->
-  <test thread-count="5" name="VerifyMonthlyMyTdecuAccountTransfer Test Cases(failed)">
-    <classes>
-      <class name="com.TestCases.VerifyMonthlyMyTdecuAccountTransfer">
-        <methods>
+          <include name="verifyDailyTransfer"/>
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="afterMethod"/>
-          <include name="verifyMonthlyTransfer"/>
         </methods>
-      </class> <!-- com.TestCases.VerifyMonthlyMyTdecuAccountTransfer -->
+      </class> <!-- com.TestCases.TDB2020_VerifyDailyMyTdecuAccountTransfer -->
     </classes>
-  </test> <!-- VerifyMonthlyMyTdecuAccountTransfer Test Cases(failed) -->
-</suite> <!-- Failed suite [OLB My TDECU Transfer Test Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

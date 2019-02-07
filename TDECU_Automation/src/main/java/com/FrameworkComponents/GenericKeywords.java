@@ -27,6 +27,16 @@ public class GenericKeywords extends BaseClass{
 		}
 	}
 	
+	public static void verifyText(String locator, String text){
+		WebElement element=getElement(locator);
+		String actText=element.getText();
+		if(actText.contains(text)){
+			Assert.assertTrue(true);
+		}else{
+			Assert.assertTrue(false);
+		}
+	}
+	
 	public static void selectDropdownOpt(String locator,String option){
 		WebElement element=getElement(locator);
 		Select sel=new Select(element);

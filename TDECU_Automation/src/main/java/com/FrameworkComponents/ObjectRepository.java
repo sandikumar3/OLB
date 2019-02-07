@@ -28,8 +28,15 @@ public class ObjectRepository {
 	public static String notes_txt="//input[@id='frmTransfers_transfermain_maketransfer_txtNotes']";
 	public static String maketransfer_btn="//input[@id='frmTransfers_transfermain_maketransfer_btnConfirm']";
 	public static String confirm_header="//div[@id='frmConfirm_confirmDialog_confirmHeaders_lblHeading']";
+	public static String confirm_frmAcnt="//div[@id='frmConfirm_confirmDialog_keyValueFrom_lblValue']";
+	public static String confirm_toAcnt="//div[@id='frmConfirm_confirmDialog_keyValueTo_lblValue']";
+	public static String confirm_amnt="//div[@id='frmConfirm_confirmDialog_keyValueThree_lblValue']";
 	public static String confirm_btn="//input[@id='frmConfirm_confirmDialog_confirmButtons_btnConfirm']";
-	public static String success_msg="//input[@id='frmConfirm_confirmDialog_confirmButtons_btnConfirm']";
+	public static String success_msg="//div[contains(@aria-label,'Your transaction has been done successfully')]";
+	
+	public static String refNum="//div[@id='frmAcknowledgement_acknowledgment_lblRefrenceNumberValue']";
+	public static String trnsfrActvty="//input[@id='frmAcknowledgement_activity_btnAddAnotherAccount']";
+	public static String postedtb_selcted="//div[contains(@class,'Selected')]/input[@aria-label='Posted ']";
 	
 	public static String noaccountmsg="//div[@id='frmTransfers_NoAccounts_txtMessage']";
 	public static String scheduledtab="//input[@id='frmTransfers_transfermain_btnScheduled']";
